@@ -15,7 +15,7 @@ const Login = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('https://shiny-quokka-09d30d.netlify.app/login',{email,password})
+        axios.post('https://login-deploy-khyc.onrender.com/login',{email,password})
         .then(result=>{console.log(result)
          // console.log(result.data.id)
         if(result.data.message=="success")
