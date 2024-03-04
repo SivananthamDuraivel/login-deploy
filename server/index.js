@@ -11,7 +11,7 @@ app.use(cors())
 
 mongoose.connect("mongodb+srv://210701250:jobportal@cluster0.obx0dyw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 .then(app.listen(3005,()=>{
-    console.log("server running")
+    console.log("server running successfully")
 }))
 .catch((err)=>console.log(err));
 
