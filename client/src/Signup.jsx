@@ -15,7 +15,7 @@ const Signup = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3005/register',{name,email,password})
+        axios.post('https://login-deploy-khyc.onrender.com/register',{name,email,password})
         .then(result=>{
           console.log(result)
           if(result.data!=='name already exists')
@@ -32,7 +32,7 @@ const Signup = () => {
 
     const handleCompany=(e)=>{
       e.preventDefault()
-      axios.post('http://localhost:3005/companyregister',{name,email,password})
+      axios.post('https://login-deploy-khyc.onrender.com/companyregister',{name,email,password})
       .then(result=>{
         console.log(result)
         if(result.data==='new user')

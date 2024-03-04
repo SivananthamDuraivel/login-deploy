@@ -11,7 +11,7 @@ const User = () => {
 
 useEffect(()=>{
     const handleLoad= async(e)=>{
-      axios.post('http://localhost:3005/needall')
+      axios.post('https://login-deploy-khyc.onrender.com/needall')
       .then(result=>{
         console.log(result)
         setPost(result.data)
