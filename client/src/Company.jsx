@@ -19,7 +19,7 @@ const Company = () => {
   useEffect(()=>{
     const handleLoad= async(e)=>{  
       console.log("handleload");
-      axios.post('https://login-deploy-khyc.onrender.com/findcompany',{cname})
+      axios.post('https://login-deploy-two.vercel.app/findcompany',{cname})
       .then(result=>{
         console.log(result)
         setPost(result.data)

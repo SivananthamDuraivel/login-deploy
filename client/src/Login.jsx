@@ -15,7 +15,7 @@ const Login = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('https://login-deploy-khyc.onrender.com/login',{email,password})
+        axios.post('https://login-deploy-two.vercel.app/login',{email,password})
         .then(result=>{console.log(result)
          // console.log(result.data.id)
         if(result.data.message=="success")
@@ -30,7 +30,7 @@ const Login = () => {
 
     const handleCompany=(e)=>{
       e.preventDefault()
-      axios.post('https://login-deploy-khyc.onrender.com/companylogin',{email,password})
+      axios.post('https://login-deploy-two.vercel.app/companylogin',{email,password})
       .then(result=>{console.log(result)
        // console.log(result.data.id)
       if(result.data.message=="success")

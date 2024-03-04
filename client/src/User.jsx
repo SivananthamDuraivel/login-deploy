@@ -11,7 +11,7 @@ const User = () => {
 
 useEffect(()=>{
     const handleLoad= async(e)=>{
-      axios.post('https://login-deploy-khyc.onrender.com/needall')
+      axios.post('https://login-deploy-two.vercel.app/needall')
       .then(result=>{
         console.log(result)
         setPost(result.data)

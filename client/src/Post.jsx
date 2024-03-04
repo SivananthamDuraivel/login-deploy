@@ -10,7 +10,7 @@ const Post = () => {
   
   const handleSubmit=(e)=>{
     e.preventDefault()
-    axios.post('https://login-deploy-khyc.onrender.com/post',{jobtitle,companyname,desc,location,salary,contact})
+    axios.post('https://login-deploy-two.vercel.app/post',{jobtitle,companyname,desc,location,salary,contact})
     .then(result=>{
       console.log(result)
         // navigate('/company') 
